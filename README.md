@@ -13,7 +13,7 @@ This is useful for when you can not, or are not, using `.vue` files. Simply repl
 Then, enable the plugin either by:
 
 ```js
-Vue.use(require('vue-style2'))
+Vue.use(require('vue-style2'));
 ```
 
 or
@@ -83,3 +83,7 @@ About Page
   }
 </style>
 ```
+
+## License
+
+This project is released under the "MIT" license. See `LICENSE` file for more details.
