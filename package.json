@@ -1,0 +1,39 @@
+{
+  "name": "vue-style2",
+  "version": "1.0.0",
+  "description": "Adds ability to use <style> tag in your Vue app. Based on vue-script2.",
+  "main": "dist/vue-style2.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Greg Slepak",
+  "homepage": "https://github.com/tyler-king/vue-style2",
+  "bugs": {
+    "url": "https://github.com/tyler-king/vue-style2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tyler-king/vue-style2.git"
+  },
+  "keywords": [
+    "style",
+    "spa",
+    "vuejs",
+    "vue",
+    "plugin",
+    "component"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "grunt": "1.0.1",
+    "grunt-babel": "6.0.0",
+    "grunt-contrib-uglify": "3.0.1",
+    "load-grunt-tasks": "3.5.0"
+  }
+}
