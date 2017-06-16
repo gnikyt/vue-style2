@@ -7,7 +7,7 @@
     installed: false,
 
     // Grint will overwrite to match package.json
-    version: '1.0.0',
+    version: '1.1.0',
 
     /**
      * Installer function for Vue plugins
@@ -21,28 +21,17 @@
 
       // Vue component for style2
       Vue.component('style2', {
-        // Template for component
-        // <slot> is important, see: http://vuejs.org/guide/components.html#Named-Slots
-        template: '<div style="display:none"><slot></slot></div>',
+        // Template with default slot
+        template: '<slot></slot>',
 
-        // NOTE: I tried doing this with Vue 2's new render() function.
-        //       It was a nightmare and I never got it to work.
-        mounted() {
-          // Setup the style element
-          const parent = this.$el.parentElement;
-          const s = document.createElement('style');
-          s.type = 'text/css';
-          s.appendChild(document.createTextNode(this.$el.innerHTML));
-
-          // Inject into the DOM
-          parent.appendChild(s);
-
-          // See: https://vuejs.org/v2/guide/migration.html#ready-replaced
-          this.$nextTick(() => {
-            // Code that assumes this.$el is in-document
-            // Remove the dummy <div> template for component
-            this.$el.remove();
-          });
+        // Render the tag
+        render(createElement) {
+          // Simple style tag with text/css
+          return createElement(
+            'style',
+            { attrs: { type: 'text/css' } },
+            this.$slots.default,
+          );
         },
       });
 

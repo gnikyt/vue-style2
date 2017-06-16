@@ -1,6 +1,6 @@
 {
   "name": "vue-style2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adds ability to use <style> tag in your Vue app. Based on vue-script2.",
   "main": "dist/vue-style2.js",
   "jsnext:main": "src/index.js",
