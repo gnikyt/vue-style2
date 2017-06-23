@@ -1,6 +1,6 @@
 {
   "name": "vue-style2",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Adds ability to use <style> tag in your Vue app. Based on vue-script2.",
   "main": "dist/vue-style2.js",
   "jsnext:main": "src/index.js",
@@ -8,13 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Greg Slepak",
-  "homepage": "https://github.com/tyler-king/vue-style2",
+  "homepage": "https://github.com/ohmybrew/vue-style2",
   "bugs": {
-    "url": "https://github.com/tyler-king/vue-style2/issues"
+    "url": "https://github.com/ohmybrew/vue-style2/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tyler-king/vue-style2.git"
+    "url": "git://github.com/ohmybrew/vue-style2.git"
   },
   "keywords": [
     "style",
